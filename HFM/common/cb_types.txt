@@ -1204,7 +1204,7 @@ add_to_sphere = {
 	break_truce_prestige_factor = 5
 	break_truce_infamy_factor = 2
 	break_truce_militancy_factor = 2
-	truce_months = 48
+	truce_months = 0
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -3004,7 +3004,7 @@ cut_down_to_size = {
 	is_triggered_only = yes
 	months = 12
 	
-	badboy_factor = 1.3
+	badboy_factor = 1.0
 	prestige_factor = 1
 	peace_cost_factor = 25
 	penalty_factor = 1
@@ -3540,7 +3540,7 @@ acquire_state = {
 	is_triggered_only = yes
 	months = 12
 	
-	construction_speed = 0.5
+	construction_speed = 1
 
 	badboy_factor = 2.2
 	prestige_factor = 2
@@ -3740,6 +3740,125 @@ acquire_state = {
 			from = jingoism 
 			to = pro_military
 			value = 0.25
+		}
+	}
+}
+
+acquire_substate = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	
+	construction_speed = 1
+
+	badboy_factor = 20
+	prestige_factor = 1
+	peace_cost_factor = 25
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 4
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		num_of_substates = 1 # if has any substate
+		civilized = no
+		THIS = { ai = no }
+		OR = {
+			NOT = { has_country_flag = substate_acquistion }
+			war_with = THIS
+		}
+		OR = {
+			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
+			neighbour = THIS
+			war_with = THIS
+		}
+		NOT = {
+			is_our_vassal = THIS
+			has_country_modifier = neutrality
+		}
+		is_vassal = no
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+			FROM = { involved_in_crisis = yes }
+		}
+	}
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+		is_our_vassal = FROM
+		FROM = {
+			is_substate = yes
+			OR = {
+				AND = { 
+					THIS = { num_of_ports = 1 } 
+					num_of_ports = 1
+				}
+				neighbour = THIS
+				AND = { war_with = THIS ai = no }
+			}
+			OR = {
+				NOT = {
+					any_state = {
+						is_colonial = no
+						NOT = { any_owned_province = { is_capital = yes } }
+					}
+				}
+				AND = {
+					THIS = { government = fascist_dictatorship }
+					NOT = { number_of_states = 4 }
+				}
+				AND = {
+					civilized = no
+					NOT = { number_of_states = 4 }
+				}
+			}
+		}
+	}
+
+	po_release_puppet = yes
+	
+	war_name = WAR_SUBSTATE_NAME
+	
+	on_add = {
+		set_country_flag = substate_acquistion
+
+		any_country = {
+			limit = {
+				substate_of = FROM
+			}
+			set_country_flag = maybe_substate_acquistion_target
+		}
+
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	on_po_accepted = {
+		THIS = {
+			clr_country_flag = substate_acquistion
+			any_country = {
+				limit = {
+					is_substate = no
+					war_with = THIS
+					has_country_flag = maybe_substate_acquistion_target
+				}
+				clr_country_flag = maybe_substate_acquistion_target
+				annex_to = THIS
+			}
 		}
 	}
 }
@@ -3985,7 +4104,7 @@ demand_concession_casus_belli = {
 	construction_speed = 1.2
 	crisis = no
 		
-	badboy_factor = 1.5
+	badboy_factor = 1.0
 	prestige_factor = 1
 	peace_cost_factor = 0.6
 	penalty_factor = 1
@@ -4010,7 +4129,7 @@ demand_concession_casus_belli = {
 			}
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
-			AND = { any_neighbor_country = { vassal_of = THIS } THIS = { tag = ENG } }
+			AND = { any_neighbor_country = { vassal_of = THIS } }
 		}
 		THIS = {
 			civilized = yes
@@ -4080,38 +4199,6 @@ demand_concession_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#Restrictions to Chinese State conquering
-		OR = {
-			NOT = { owner = { is_culture_group = east_asian } }
-			NOT = { total_pops = 600000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-		}
 		NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -4133,7 +4220,7 @@ demand_concession_casus_belli = {
 			THIS = { ai = no }
 		}
 		OR = {
-			any_owned_province = { NOT = { is_core = KOR } }
+			NOT = { is_culture_group = east_asian }
 			THIS = { ai = no }
 			THIS = { is_culture_group = east_asian }
 		}
@@ -4163,7 +4250,7 @@ demand_concession_NI_casus_belli = {
 	
 	construction_speed = 1.2
 	
-	badboy_factor = 1
+	badboy_factor = 0.8
 	prestige_factor = 1
 	peace_cost_factor = 0.5
 	penalty_factor = 1
@@ -4187,6 +4274,7 @@ demand_concession_NI_casus_belli = {
 			}
 			neighbour = THIS
 			AND = { war_with = THIS ai = no }
+			AND = { any_neighbor_country = { vassal_of = THIS } }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -4240,38 +4328,6 @@ demand_concession_NI_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#restriction to chinese state conquering
-		OR = {
-			NOT = { owner = { is_culture_group = east_asian } }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-		}
 		NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -4293,7 +4349,7 @@ demand_concession_NI_casus_belli = {
 			THIS = { ai = no }
 		}
 		OR = {
-			any_owned_province = { NOT = { is_core = KOR } }
+			NOT = { is_culture_group = east_asian }
 			THIS = { ai = no }
 			THIS = { is_culture_group = east_asian }
 		}
@@ -4323,7 +4379,7 @@ demand_concession_BC_casus_belli = {
 	
 	construction_speed = 1.2
 	
-	badboy_factor = 0.5
+	badboy_factor = 0.6
 	prestige_factor = 1
 	peace_cost_factor = 0.4
 	penalty_factor = 1
@@ -4347,6 +4403,7 @@ demand_concession_BC_casus_belli = {
 			}
 			neighbour = THIS
 			AND = { war_with = THIS ai = no }
+			AND = { any_neighbor_country = { vassal_of = THIS } }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -4390,38 +4447,6 @@ demand_concession_BC_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#restriction to Chinese state conquering
-		OR = {
-			NOT = { owner = { is_culture_group = east_asian } }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-		}
 		NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -4443,7 +4468,7 @@ demand_concession_BC_casus_belli = {
 			THIS = { ai = no }
 		}
 		OR = {
-			any_owned_province = { NOT = { is_core = KOR } }
+			NOT = { is_culture_group = east_asian }
 			THIS = { ai = no }
 			THIS = { is_culture_group = east_asian }
 		}
@@ -4565,11 +4590,15 @@ conquest = {
 			}
 			AND = {
 				THIS = { government = fascist_dictatorship }
-				NOT = { number_of_states = 4 }
+				NOT = { number_of_states = 5 }
 			}
 			AND = {
 				tag = SWI
-				NOT = { number_of_states = 4 }
+				NOT = { number_of_states = 5 }
+			}
+			AND = {
+				civilized = no
+				NOT = { number_of_states = 5 }
 			}
 		}
 		is_vassal = no
@@ -4709,7 +4738,7 @@ conquest = {
 		}
 	}
 
-	badboy_factor = 2.2
+	badboy_factor = 2.0
 	prestige_factor = 5
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -4949,9 +4978,9 @@ establish_protectorate_casus_belli = {
 	months = 0
 	crisis = no
 	
-	construction_speed = 0.5
+	construction_speed = 1
 	
-	badboy_factor = 2.0
+	badboy_factor = 1.0
 	prestige_factor = 1
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -4980,7 +5009,7 @@ establish_protectorate_casus_belli = {
 		NOT = { is_our_vassal = THIS }
 		NOT = { 
 			has_country_modifier = neutrality
-			number_of_states = 2
+			number_of_states = 5
 		}
 		OR = {
 			war_with = THIS
@@ -5007,38 +5036,6 @@ establish_protectorate_casus_belli = {
 					}
 				}
 		}
-		OR = {
-			NOT = { is_culture_group = east_asian }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-		}
-		
 		THIS = {
 			civilized = yes
 			NOT = { has_country_modifier = neutrality }
@@ -5072,6 +5069,11 @@ establish_protectorate_casus_belli = {
 				}
 			}
 		}
+		OR = {
+			NOT = { is_culture_group = east_asian }
+			THIS = { ai = no }
+			THIS = { is_culture_group = east_asian }
+		}
 	}
 	
 	po_annex = yes
@@ -5094,9 +5096,9 @@ establish_protectorate_NI_casus_belli = {
 	months = 0
 	crisis = no
 	
-	construction_speed = 0.8
+	construction_speed = 1.2
 	
-	badboy_factor = 1.5
+	badboy_factor = 0.8
 	prestige_factor = 1
 	peace_cost_factor = 0.8
 	penalty_factor = 1
@@ -5144,7 +5146,7 @@ establish_protectorate_NI_casus_belli = {
 			capital_scope = { continent = east_africa }
 			capital_scope = { continent = south_west_africa }
 		}
-			number_of_states = 7
+			number_of_states = 8
 		}
 		civilized = no
 		is_vassal = no
@@ -5168,34 +5170,8 @@ establish_protectorate_NI_casus_belli = {
 			}
 		OR = {
 			NOT = { is_culture_group = east_asian }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
+			THIS = { ai = no }
+			THIS = { is_culture_group = east_asian }
 		}
 	}
 	
@@ -5219,9 +5195,9 @@ establish_protectorate_BC_casus_belli = {
 	months = 0
 	crisis = no
 	
-	construction_speed = 1
+	construction_speed = 1.4
 	
-	badboy_factor = 1.0
+	badboy_factor = 0.6
 	prestige_factor = 1
 	peace_cost_factor = 0.6
 	penalty_factor = 1
@@ -5293,34 +5269,8 @@ establish_protectorate_BC_casus_belli = {
 			}
 		OR = {
 			NOT = { is_culture_group = east_asian }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
+			THIS = { ai = no }
+			THIS = { is_culture_group = east_asian }
 		}
 	}
 	
@@ -5568,7 +5518,7 @@ make_puppet = {
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
-	truce_months = 48
+	truce_months = 0
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -6147,9 +6097,9 @@ acquire_substate_region = {
 	months = 12
 	crisis = no
 	
-	construction_speed = 0.5
+	construction_speed = 1
 	
-	badboy_factor = 2.2
+	badboy_factor = 1.0
 	prestige_factor = 2
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -6166,6 +6116,7 @@ acquire_substate_region = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
+		civilized = no
 		THIS = { ai = no }
 		any_substate = {
 			OR = {
@@ -6212,9 +6163,9 @@ acquire_substate_core_region = {
 	crisis = no
 	always = yes
 	
-	construction_speed = 0.5
+	construction_speed = 1
 	
-	badboy_factor = 2.2
+	badboy_factor = 1.0
 	prestige_factor = 2
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -6558,7 +6509,7 @@ treaty_port_casus_belli = {
 	months = 12
 	crisis = no
 
-	badboy_factor = 1
+	badboy_factor = 0.8
 	prestige_factor = 0.5
 	peace_cost_factor = 10
 	penalty_factor = 2

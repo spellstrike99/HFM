@@ -1,0 +1,110 @@
+country_event = {
+	id = 40007001
+	title = "Wartime Discontent Removed"
+	desc = "The war is over. We're getting back to normal."
+	picture = "administration"
+	news = no
+	
+	trigger = {
+		war = no
+		has_country_flag = wartime_discontent_set
+	}
+	
+	immediate = {
+		clr_country_flag = wartime_discontent_set
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Good."
+		any_owned = {
+			limit = { has_province_modifier = wartime_discontent }
+			remove_province_modifier = wartime_discontent
+		}
+	}
+}
+
+country_event = {
+	id = 40007002
+	title = "Wartime Discontent"
+	desc = "We're at war. Some people - even soldiers - are getting worried of the fate of this war."
+	picture = "administration"
+	news = no
+	
+	trigger = {
+		war = yes
+		war_exhaustion = 1
+		NOT = { has_country_flag = wartime_discontent_set }
+	}
+	
+	immediate = {
+		set_country_flag = wartime_discontent_set
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Everything will be fine."
+		any_owned = {
+			limit = { NOT = { has_province_modifier = wartime_discontent } }
+			add_province_modifier = {
+				name = wartime_discontent
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 40008001
+	title = "Peace"
+	desc = "The war is over -- at least for now."
+	picture = "administration"
+	
+	trigger = {
+		is_substate = yes
+		war = no
+		has_country_flag = maybe_substate_acquistion_target
+	}
+	
+	immediate = {
+		clr_country_flag = maybe_substate_acquistion_target
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Fine."
+	}
+}
+
+country_event = {
+	id = 40008002
+	title = "Peace"
+	desc = "The war is over -- at least for now."
+	picture = "administration"
+	
+	trigger = {
+		war = no
+		has_country_flag = substate_acquistion
+	}
+	
+	immediate = {
+		clr_country_flag = substate_acquistion
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Fine."
+	}
+}
