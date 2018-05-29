@@ -19,52 +19,52 @@ rebel = {
 
 #Total = 44
 life_needs = {
-	cattle = 3	#6
-	wool = 2.5	#2.8
-	fish = 4	#6
-	fruit = 4	#7.2
-	grain = 10	#22
+	cattle = 5
+	fish =  5
+	grain =  10
 }
 
 #Total cash needed: 3775.1 - Vanilla value: 2852
 everyday_needs = {
-	coal = 20
-	paper = 20
-	luxury_clothes = 20
-	luxury_furniture = 20
-	wine = 20
-	tobacco = 20 
-	coffee = 20
+	coal = 10
+	fabric = 5
+	fruit = 10
+	furniture = 5
+	glass = 10
+	liquor = 5
+	paper = 10
+	regular_clothes = 5
 	tea = 10
-	radio = 4
-	telephones = 5
-	automobiles = 1
-	steamer_convoy = 1.5
 }
 
 #Total cash needed: 3883 - Vanilla value: 3863
 luxury_needs = {
-	steel = 1
-	cement = 1
-	lumber = 1
-	canned_food = 5
-	grain = 40
-	fruit = 40
-	wool = 40
-	cattle = 40
-	fish = 40
-	opium = 20
-	oil = 10
-	rubber = 10
-	telephones = 20
-	automobiles = 20
+	coal = 10
+	fabric = 5
+	fruit = 10
+	furniture = 5
+	glass = 10
+	liquor = 5
+	paper = 10
+	regular_clothes = 5
+	tea = 10
+	#
 	aeroplanes = 5
-	radio = 20
-	fuel = 30
-	ammunition = 1 
-	small_arms = 1 
+	ammunition = 1
+	automobiles = 20
+	canned_food = 2
 	clipper_convoy = 2
-	steamer_convoy = 3
+	coffee = 20
+	fuel = 30
+	luxury_clothes = 20
+	luxury_furniture = 20
+	opium = 20
+	radio = 20
+	small_arms = 1
+	steamer_convoy = 2
+	telephones = 20
+	tobacco = 20
+	wine = 20
 }
 
 

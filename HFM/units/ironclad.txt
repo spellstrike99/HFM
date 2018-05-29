@@ -38,6 +38,7 @@ ironclad = {
 	supply_cost = {
 		steamer_convoy = 0.75
 		artillery = 0.2
+		explosives = 0.14 #0
 		canned_food = 0.4
 		ammunition = 0.2
 	}

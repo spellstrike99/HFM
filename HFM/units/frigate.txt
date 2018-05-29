@@ -32,6 +32,7 @@ frigate = {
 	supply_cost = {
 		clipper_convoy = 0.16
 		artillery = 0.04 #0.08
+		explosives = 0.028 #0
 	}
 	
 	#Naval Abilties

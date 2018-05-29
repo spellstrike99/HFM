@@ -35,6 +35,7 @@ monitor = {
 	supply_cost = {
 		steamer_convoy = 0.35
 		artillery = 0.3
+		explosives = 0.21 #0
 		canned_food = 0.8
 		ammunition = 0.3
 	}

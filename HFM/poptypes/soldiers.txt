@@ -31,37 +31,52 @@ luxury_needs_income = {
 
 #Total = 11
 life_needs = {
-	cattle = 0.75
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
+	cattle = 2
+	fish =  2
+	grain =  4
 }
 
 #Total cash needed: 69.075 - Vanilla value: 57.35
 everyday_needs = {
-	tea = 4
 	coal = 1
-	liquor = 2
+	fabric = 1
+	fruit = 1
+	furniture = 1
+	glass = 1
+	liquor = 3
+	paper = 2
 	regular_clothes = 2
-	furniture = 2
-	coffee = 1
-	tobacco = 1
-	ammunition = 0.5 #0
-	small_arms = 0.35 #0
+	tea = 2
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995
 luxury_needs = {	
-	regular_clothes = 3
-	furniture = 3
-	liquor = 1.5
-	paper = 1.0
-	telephones = 1.0
+	coal = 1
+	fabric = 1
+	fruit = 1
+	furniture = 1
+	glass = 1
+	liquor = 3
+	paper = 2
+	regular_clothes = 2
+	tea = 2
+	#
+	aeroplanes = 0.1
+	ammunition = 0.25
 	automobiles = 0.5
-	radio = 1.0
-	fuel = 0.1
-	#dye = 0.5
+	canned_food = 0.25
+	clipper_convoy = 0.05
+	coffee = 1
+	fuel = 0.5
+	luxury_clothes = 0.25
+	luxury_furniture = 0.25
+	opium = 0.1
+	radio = 0.5
+	small_arms = 0.25
+	steamer_convoy = 0.05
+	telephones = 0.5
+	tobacco = 2
+	wine = 1
 }
 
 
