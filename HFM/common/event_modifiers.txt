@@ -3276,3 +3276,7 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
+wartime_discontent = {
+	icon = 20
+	max_attrition = 1
+}

@@ -103,8 +103,8 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 5			#Maximum Attrition is 5
-	supply_limit = 5
+	max_attrition =	0			#Maximum Attrition is 5
+	supply_limit = 1
 }
 
 
@@ -119,7 +119,7 @@ no_adjacent_controlled = {
 
 
 core = {
-
+	max_attrition =	-1			#Maximum Attrition is 5
 }
 
 

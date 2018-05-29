@@ -16,7 +16,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	berlin = {
@@ -26,7 +27,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	paris = {
 		movement_cost = 1.0
@@ -35,7 +37,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	london = {
 		movement_cost = 1.0
@@ -44,7 +47,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	stpetersburg = {
 		movement_cost = 1.0
@@ -53,7 +57,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 		immigrant_attract = 0.5
 	}
 	vienna = {
@@ -66,7 +71,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 35
+		max_attrition = 0
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -77,7 +83,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	rome = {
 		movement_cost = 1.0
@@ -86,7 +93,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	madrid = {
 		movement_cost = 1.0
@@ -95,7 +103,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	stockholm = {
 		movement_cost = 1.0
@@ -104,7 +113,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	istanbul = {
 		movement_cost = 1.0
@@ -113,7 +123,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	warsaw = {
 		movement_cost = 1.0
@@ -122,7 +133,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	athens = {
 		movement_cost = 1.0
@@ -131,7 +143,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	lisbon = {
 		movement_cost = 1.0
@@ -140,7 +153,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	amsterdam = {
 		movement_cost = 1.0
@@ -149,7 +163,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	brussels = {
 		movement_cost = 1.0
@@ -158,7 +173,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	copenhagen = {
 		movement_cost = 1.0
@@ -167,7 +183,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	oslo = {
 		movement_cost = 1.2
@@ -179,7 +196,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -190,7 +208,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	munich = {
 		movement_cost = 1.2
@@ -202,7 +221,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -213,7 +233,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	dublin = {
 		movement_cost = 1.0
@@ -222,7 +243,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	belgrade = {
 		movement_cost = 1.2
@@ -234,7 +256,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -245,7 +268,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	naples = {
 		movement_cost = 1.0
@@ -254,7 +278,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	bern = {
 		movement_cost = 1.4
@@ -264,7 +289,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -277,7 +303,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	cairo = {
 		movement_cost = 1.0
@@ -286,7 +313,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	prague = {
 		movement_cost = 1.0
@@ -295,7 +323,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	pest = {
 		movement_cost = 1.0
@@ -304,7 +333,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	cologne = {
 		movement_cost = 1.0
@@ -313,7 +343,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 1.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	mexicocity = {
 		movement_cost = 1.2
@@ -325,7 +356,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -336,7 +368,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	edinburgh = {
 		movement_cost = 1.0
@@ -345,7 +378,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	edo = {
@@ -355,7 +389,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	hanseong = {
@@ -366,7 +401,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -380,7 +416,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -391,7 +428,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	hongkong = {
 		movement_cost = 1.0
@@ -401,7 +439,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	macao = {
 		movement_cost = 1.0
@@ -411,7 +450,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	kiev = {
 		movement_cost = 1.0
@@ -420,7 +460,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	riga = {
 		movement_cost = 1.0
@@ -429,7 +470,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	moscow = {
 		movement_cost = 1.2
@@ -439,7 +481,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	minsk = {
@@ -449,7 +492,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	lyon = {
 		movement_cost = 1.2
@@ -459,7 +503,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	
@@ -470,7 +515,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	chicago = {
@@ -480,7 +526,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	boston = {
 		movement_cost = 1.0
@@ -489,7 +536,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	sanfrancisco = {
 		movement_cost = 1.0
@@ -498,7 +546,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	hamburg = {
 		movement_cost = 1.0
@@ -507,7 +556,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 1.5
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	dresden = {
 		movement_cost = 1.2
@@ -517,7 +567,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	sofia = {
@@ -530,7 +581,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -544,7 +596,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -555,7 +608,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	bordeaux = {
 		movement_cost = 1.0
@@ -564,7 +618,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	toulouse = {
 		movement_cost = 1.2
@@ -576,7 +631,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -590,7 +646,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -601,7 +658,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	luxemburg = {
 		movement_cost = 1.2
@@ -611,7 +669,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	arctic = {
@@ -624,7 +683,7 @@ categories =  {
 		min_build_naval_base = 4
 		min_build_railroad = 4
 		min_build_fort = 1
-		attrition = 2
+		attrition = 5
 	}
 
 	venice = {
@@ -634,7 +693,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	zagreb = {
@@ -647,7 +707,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -677,7 +738,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -690,7 +752,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -707,7 +770,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -720,7 +784,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -734,7 +799,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	baghdad = {
@@ -744,7 +810,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	damascus = {
@@ -754,7 +821,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.1
 		mine_rgo_eff = -0.1
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		min_build_railroad = 2
 		attrition = 1
 	}
@@ -767,7 +835,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -778,7 +847,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	karlsruhe = {
@@ -788,7 +858,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	stuttgart = {
@@ -798,7 +869,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	konigsberg = {
@@ -808,7 +880,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	dusseldorf = {
@@ -818,7 +891,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	dortmund = {
@@ -828,7 +902,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	magdeburg = {
@@ -838,7 +913,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	kiel = {
@@ -848,7 +924,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	stettin = {
@@ -858,7 +935,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	frankfurt = {
@@ -868,7 +946,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.5
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 		immigrant_attract = 0.25
 	}
 
@@ -879,7 +958,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	leipzig = {
@@ -889,7 +969,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	breslau = {
@@ -899,7 +980,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	#andorra = {
@@ -926,7 +1008,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	fez = {
@@ -939,7 +1022,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -954,7 +1038,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	ceuta = {
@@ -965,7 +1050,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	#melilla = {
@@ -986,7 +1072,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	algiers = {
@@ -996,7 +1083,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	zurich = {
@@ -1009,7 +1097,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1024,7 +1113,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1035,7 +1125,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	manchester = {
@@ -1045,7 +1136,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	cardiff = {
@@ -1055,7 +1147,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 1.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	birmingham = {
@@ -1065,7 +1158,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	glasgow = {
@@ -1078,7 +1172,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1090,7 +1185,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	newcastle = {
@@ -1100,7 +1196,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	sheffield = {
@@ -1113,7 +1210,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1125,7 +1223,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	bristol = {
@@ -1135,7 +1234,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	belfast = {
@@ -1145,7 +1245,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	goteborg = {
@@ -1155,7 +1256,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	vilnius = {
@@ -1166,7 +1268,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1177,7 +1280,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	ottawa = {
@@ -1187,7 +1291,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	reval = {
@@ -1199,6 +1304,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.25
 		mine_rgo_eff = -0.3
+		supply_limit = 14
+		max_attrition = 3.5
 		supply_limit = 3
 		min_build_railroad = 2
 		combat_width = -0.25
@@ -1214,7 +1321,8 @@ categories =  {
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.60
 		
@@ -1231,7 +1339,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1246,7 +1355,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.1
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1260,7 +1370,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	cleveland = {
@@ -1271,7 +1382,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1283,7 +1395,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1297,7 +1410,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1309,7 +1423,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	neworleans = {
@@ -1319,7 +1434,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	austin = {
@@ -1329,7 +1445,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	toronto = {
@@ -1339,7 +1456,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	caen = {
@@ -1349,7 +1467,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	lille = {
@@ -1359,7 +1478,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	bogota = {
@@ -1369,7 +1489,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	caracas = {
@@ -1379,7 +1500,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	rio = {
@@ -1392,7 +1514,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1407,7 +1530,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1419,7 +1543,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	buenosaires = {
@@ -1429,7 +1554,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	santiago = {
@@ -1442,7 +1568,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1484,7 +1611,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1518,7 +1646,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1535,7 +1664,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1551,7 +1681,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1563,7 +1694,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	calcutta = {
@@ -1573,7 +1705,8 @@ categories =  {
 		farm_rgo_eff = 0.1
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	pondicherry = {
@@ -1583,7 +1716,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	bombay = {
@@ -1593,7 +1727,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	delhi = {
@@ -1604,7 +1739,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1618,7 +1754,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1630,7 +1767,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	lahore = {
@@ -1640,7 +1778,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	bangkok = {
@@ -1654,7 +1793,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = -0.2
 		
-		supply_limit = 1
+		supply_limit = 8
+		max_attrition = 4.5
 		min_build_railroad = 3
 		min_build_fort = 1
 		combat_width = -0.25
@@ -1670,7 +1810,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1682,7 +1823,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	singapore = {
@@ -1692,7 +1834,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	batavia = {
@@ -1702,7 +1845,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	sydney = {
@@ -1716,7 +1860,8 @@ categories =  {
 		mine_rgo_eff = 0.0
 		immigrant_attract = 1
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1729,7 +1874,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		immigrant_attract = 1
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	perth = {
@@ -1741,7 +1887,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		immigrant_attract = 1
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -1753,7 +1900,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 		immigrant_attract = 0.5
 	}
@@ -1769,7 +1917,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = -0.2
 		
-		supply_limit = 1
+		supply_limit = 8
+		max_attrition = 4.5
 		min_build_railroad = 3
 		min_build_fort = 1
 		combat_width = -0.25
@@ -1782,7 +1931,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	hainan = {
@@ -1792,7 +1942,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	ningbo = {
@@ -1802,7 +1953,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	qingdao = {
@@ -1812,7 +1964,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	weihaiwei = {
@@ -1822,7 +1975,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	oldtianjin = {
@@ -1832,7 +1986,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	portarthur = {
@@ -1842,7 +1997,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	kyoto = {
@@ -1855,7 +2011,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1867,7 +2024,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	samarkand = {
@@ -1880,7 +2038,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 
-		supply_limit = 3
+		supply_limit = 14
+		max_attrition = 3.5
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1895,7 +2054,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -1909,7 +2069,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	tirana = {
@@ -1922,7 +2083,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1937,7 +2099,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1952,7 +2115,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -1993,7 +2157,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = -0.6
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		combat_width = -0.3
 		immigrant_attract = -0.75
 	}
@@ -2005,7 +2170,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	florence = {
@@ -2015,7 +2181,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	danzig = {
@@ -2025,7 +2192,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	nanjing = {
@@ -2035,7 +2203,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	mukden = {
@@ -2045,7 +2214,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	yokohama = {
@@ -2055,7 +2225,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	kobe = {
@@ -2066,7 +2237,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2077,7 +2249,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	wuchang = {
@@ -2087,7 +2260,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	xian = {
@@ -2098,7 +2272,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2109,7 +2284,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	pusan = {
@@ -2119,7 +2295,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	mecca = {
@@ -2129,7 +2306,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.1
 		mine_rgo_eff = -0.1
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		min_build_railroad = 2
 		attrition = 1
 	}
@@ -2145,7 +2323,8 @@ categories =  {
 		mine_rgo_eff = 0.1
 		immigrant_attract = -1.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.60
 		
@@ -2177,7 +2356,8 @@ categories =  {
 		farm_rgo_eff = 0.25
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	lodz = {
@@ -2188,7 +2368,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2202,7 +2383,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2214,7 +2396,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	rostov = {
@@ -2224,7 +2407,8 @@ categories =  {
 		farm_rgo_eff = -0.1
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 4
+		supply_limit = 17
+		max_attrition = 3
 	}
 
 	vladivostok = {
@@ -2234,7 +2418,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	nikolaev = {
@@ -2244,7 +2429,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	sevastopol = {
@@ -2257,7 +2443,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.1
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.60
 		
@@ -2274,7 +2461,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.60
 		
@@ -2288,7 +2476,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	saratov = {
@@ -2298,7 +2487,8 @@ categories =  {
 		farm_rgo_eff = -0.1
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 4
+		supply_limit = 17
+		max_attrition = 3
 	}
 
 	chisinau = {
@@ -2308,7 +2498,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	kazan = {
@@ -2319,7 +2510,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2331,7 +2523,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2343,7 +2536,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2355,7 +2549,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2367,7 +2562,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.33
 	}
 
@@ -2378,7 +2574,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	timbuktu = {
@@ -2388,7 +2585,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.1
 		mine_rgo_eff = -0.1
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		min_build_railroad = 2
 		attrition = 1
 	}		
@@ -2403,7 +2601,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2415,7 +2614,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	#xining = {
@@ -2449,7 +2649,8 @@ categories =  {
 		farm_rgo_eff = 0.1
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 
@@ -2461,7 +2662,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -2475,7 +2677,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 		immigrant_attract = -1
 	}
 
@@ -2489,7 +2692,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2501,7 +2705,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	grandbassam = {
@@ -2511,7 +2716,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 		immigrant_attract = -0.4
 	}
 
@@ -2522,7 +2728,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	stlouis = {
@@ -2532,7 +2739,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.1
 		mine_rgo_eff = 0.25
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		min_build_railroad = 2
 		attrition = 1
 	}
@@ -2544,7 +2752,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.1
 		mine_rgo_eff = 1.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		min_build_railroad = 2
 		attrition = 1
 	}
@@ -2556,7 +2765,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	rotterdam = {
@@ -2568,7 +2778,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.25
 		mine_rgo_eff = -0.3
-		supply_limit = 3
+		supply_limit = 14
+		max_attrition = 3.5
 		min_build_railroad = 2
 		combat_width = -0.25
 	}
@@ -2583,7 +2794,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2595,7 +2807,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	karachi = {
@@ -2608,7 +2821,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2620,7 +2834,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	brest = {
@@ -2630,7 +2845,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	dunkirk = {
@@ -2640,7 +2856,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	canton = {
@@ -2650,7 +2867,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	larochelle = {
@@ -2660,7 +2878,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	hanoi = {
@@ -2673,7 +2892,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2685,7 +2905,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 
 	wilhelmshaven = {
@@ -2695,7 +2916,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	pola = {
@@ -2708,7 +2930,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2723,7 +2946,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2736,7 +2960,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	
@@ -2749,7 +2974,8 @@ categories =  {
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.0
 		min_build_naval_base = 4
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	panama = {
@@ -2762,7 +2988,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2774,7 +3001,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 1.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	zadar = {
@@ -2784,7 +3012,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}	
 	
 	dubrovnik = {
@@ -2807,7 +3036,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2819,7 +3049,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	plymouth = {
@@ -2829,7 +3060,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	liege = {
@@ -2839,7 +3071,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 1.25
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	namur = {
@@ -2859,7 +3092,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}	
 	
 	chemnitz = {
@@ -2869,7 +3103,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	stjohn = {
@@ -2883,6 +3118,8 @@ categories =  {
 		mine_rgo_size = -0.0
 		mine_rgo_eff = -0.2
 		
+		supply_limit = 14
+		max_attrition = 3.5
 		min_build_naval_base = 1
 		min_build_railroad = 4
 		min_build_fort = 1
@@ -2899,7 +3136,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 1.5
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -2912,7 +3150,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.25
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	
@@ -2923,7 +3162,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	braunschweig = {
@@ -2933,7 +3173,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	pozan = {
@@ -2943,7 +3184,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}	
 	
 	rouen = {
@@ -2953,7 +3195,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}	
 	
 	koblenz = {
@@ -2963,7 +3206,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.75
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	nagasaki = {
@@ -2973,7 +3217,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 
 	}	
 	
@@ -2984,7 +3229,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.5
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}	
 	
 	annecy = {
@@ -2995,7 +3241,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.5
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -3009,7 +3256,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35 = 10 * 3 + 5
+		max_attrition = 0
 
 	}	
 	
@@ -3020,7 +3268,8 @@ categories =  {
 		farm_rgo_eff = -0.1
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 4
+		supply_limit = 17
+		max_attrition = 3
 
 	}
 
@@ -3031,7 +3280,8 @@ categories =  {
 		farm_rgo_eff = -0.15
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 4
+		supply_limit = 17
+		max_attrition = 3
 
 	}
 	
@@ -3043,7 +3293,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		combat_width = -0.20
 	}
 	
@@ -3058,7 +3309,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = -0.2
 		
-		supply_limit = 1
+		supply_limit = 8
+		max_attrition = 4.5
 		min_build_railroad = 3
 		min_build_fort = 1
 		combat_width = -0.25
@@ -3076,6 +3328,8 @@ categories =  {
 		mine_rgo_size = -0.0
 		mine_rgo_eff = -0.2
 		
+		supply_limit = 9.5
+		max_attrition = 4.25
 		min_build_naval_base = 4
 		min_build_railroad = 4
 		min_build_fort = 1
@@ -3092,7 +3346,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 6
+		supply_limit = 23
+		max_attrition = 2
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -3107,7 +3362,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 
-		supply_limit = 3
+		supply_limit = 14
+		max_attrition = 3.5
 		min_build_railroad = 1
 		combat_width = -0.33
 	}
@@ -3121,7 +3377,8 @@ categories =  {
 		farm_rgo_eff = -0.3
 		mine_rgo_size = -0.25
 		mine_rgo_eff = -0.3
-		supply_limit = 3
+		supply_limit = 14
+		max_attrition = 3.5
 		min_build_railroad = 2
 		combat_width = -0.25
 	}
@@ -3133,7 +3390,8 @@ categories =  {
 		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 10
+		supply_limit = 35
+		max_attrition = 0
 	}
 	
 	mountain = {
@@ -3144,7 +3402,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.6
 		
@@ -3167,6 +3426,8 @@ categories =  {
 		
 		combat_width = -0.6
 		attrition = 2
+		supply_limit = 8
+		max_attrition = 4.5
 	}
 	
 	montane_forest = {
@@ -3179,7 +3440,8 @@ categories =  {
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
 		
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		
 		combat_width = -0.70
 		
@@ -3198,6 +3460,8 @@ categories =  {
 		min_build_fort = 1
 		immigrant_attract = -1.5
 		attrition = 2
+		supply_limit = 6.5
+		max_attrition = 4.75
 	}
 	
 	semidesert = {
@@ -3211,6 +3475,8 @@ categories =  {
 		min_build_railroad = 2
 		immigrant_attract = -1.5
 		attrition = 1
+		supply_limit = 8
+		max_attrition = 4.5
 	}
 	
 	
@@ -3224,6 +3490,8 @@ categories =  {
 		supply_limit = 2
 		min_build_railroad = 3
 		attrition = 1
+		supply_limit = 8
+		max_attrition = 4.5
 	}
 	
 	small_island = {
@@ -3235,7 +3503,8 @@ categories =  {
 		farm_rgo_eff = 0.0
 		mine_rgo_size = -0.5
 		mine_rgo_eff = 0.0
-		supply_limit = 2
+		supply_limit = 11
+		max_attrition = 4
 		combat_width = -0.3
 		immigrant_attract = -0.25
 	}
@@ -3253,6 +3522,8 @@ categories =  {
 		min_build_fort = 2
 		immigrant_push = -1.0
 		immigrant_attract = -0.25
+		supply_limit = 8
+		max_attrition = 4.5
 	}
 	
 	new_world_boreal = {
