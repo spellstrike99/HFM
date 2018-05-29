@@ -44,6 +44,7 @@ country_event = {
 			name = "western_influences"
 			duration = -1
 		}
+		research_points = 4000
 
 		ai_chance = {
 			factor = 50

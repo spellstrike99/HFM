@@ -45,8 +45,8 @@ country = {
 	WRONG_REFORM_MILITANCY_IMPACT = 2,
 	SUPPRESSION_RADICALISATION_HIT = 10, -- % base added to a movements radicalness
 	INVESTMENT_SCORE_FACTOR = 0.001, -- how much foreign investment money counts towards your industry score
-	UNCIV_TECH_SPREAD_MAX = 0.15, --Max techs an unciv will get on westernizing
-	UNCIV_TECH_SPREAD_MIN = 0.10, --Minimum techs an unciv will get on westernizing
+	UNCIV_TECH_SPREAD_MAX = 0.30, --Max techs an unciv will get on westernizing
+	UNCIV_TECH_SPREAD_MIN = 0.15, --Minimum techs an unciv will get on westernizing
 	MIN_DELAY_BETWEEN_REFORMS = 6, -- months
 	ECONOMIC_REFORM_UH_FACTOR = -0.40,
 	MILITARY_REFORM_UH_FACTOR = -0.40,
@@ -89,7 +89,7 @@ country = {
 	COLONIZATION_INFLUENCE_TEMPERATURE_PER_DAY = 0.08,
 	COLONIZATION_INFLUENCE_TEMPERATURE_PER_LEVEL = 0.005,
 	PARTY_LOYALTY_HIT_ON_WAR_LOSS = 0.95, -- Drops the ruling party loyalty if war is lost.
-	RESEARCH_POINTS_ON_CONQUER_MULT = 200, -- multiplier to RP got by conquering as unciv when got enacted military reforms
+	RESEARCH_POINTS_ON_CONQUER_MULT = 360, -- multiplier to RP got by conquering as unciv when got enacted military reforms
 	MAX_RESEARCH_POINTS = 35000, -- max RP you can store for uncivs
 },
 

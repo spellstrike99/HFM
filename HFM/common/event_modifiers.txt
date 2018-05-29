@@ -911,7 +911,7 @@ missionary_activity = {
 western_influences = {
 	global_pop_militancy_modifier = 0.05
 	global_pop_consciousness_modifier = 0.05
-	research_points_modifier = 0.2
+	research_points_modifier = 0.4
 	icon = 10
 }
 
