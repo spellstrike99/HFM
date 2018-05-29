@@ -17,16 +17,7 @@ low_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = low_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.25
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.3
-			}
-		}
+		administration_spending = 0.3
 	}
 	global_population_growth = 0.001
 	icon = 19
@@ -36,16 +27,7 @@ acceptable_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = acceptable_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.3
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.4
-			}
-		}
+		administration_spending = 0.4
 	}
 	global_population_growth = 0.001
 	icon = 19
@@ -55,16 +37,7 @@ good_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = good_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.3
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.5
-			}
-		}
+		administration_spending = 0.5
 	}
 	global_population_growth = 0.002
 	icon = 19
@@ -74,16 +47,7 @@ health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = good_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.74
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.99
-			}
-		}
+		administration_spending = 0.99
 	}
 	global_population_growth = 0.002
 	icon = 19
@@ -123,16 +87,7 @@ education_fully_funded = {
 	trigger = {
 		exists = yes
 		school_reforms = good_schools
-		OR = {
-			AND = {
-				ai = yes
-				education_spending = 0.5
-			}
-			AND = {
-				ai = no
-				education_spending = 0.99
-			}
-		}
+		education_spending = 0.99
 	}
 	education_efficiency_modifier = 0.1
 	icon = 19
@@ -142,7 +97,6 @@ neglected_education = {
 	trigger = {
 		exists = yes
 		civilized = yes
-		ai = no
 		number_of_states = 2
 		total_pops = 1000000
 		OR = {
@@ -190,7 +144,6 @@ islamic_law_triggered = {
 the_british_raj = {
 	trigger = {
 		exists = yes
-		ai = no
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism
@@ -227,50 +180,9 @@ the_british_raj = {
 	icon = 19
 }
 
-the_british_raj_ai = {
-	trigger = {
-		exists = yes
-		ai = yes
-		OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			government = hms_government
-			government = fascist_dictatorship
-			government = democracy
-		}
-		NOT = { is_culture_group = indo_iranian }
-		NOT = { is_culture_group = south_asian }
-		1227 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1236 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1251 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1297 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-	}
-	research_points = 0.5
-	core_pop_militancy_modifier = -0.05
-	supply_consumption = 0.1
-	tax_efficiency = -0.1
-	administrative_efficiency_modifier = -0.1
-	influence_modifier = 0.05
-	prestige = 0.03
-	icon = 19
-}
-
 greater_germany = {
 	trigger = {
 		exists = yes
-		ai = no
 		549 = {
 			owned_by = THIS
 		}
@@ -542,28 +454,6 @@ social_reformed_nation = {
 	icon = 13
 }
 
-educational_spen = {
-		trigger = {
-			ai = yes
-			exists = yes
-			administration_spending = 0.35
-		}
-
-	education_efficiency_modifier = 0.3
-	icon = 16
-}
-
-admin_spen = {
-		trigger = {
-			ai = yes
-			exists = yes
-			administration_spending = 0.74
-		}
-
-	administrative_efficiency_modifier = 0.3
-	icon = 16
-}
-
 hormuz_strait = {
 		trigger = {
 			exists = yes
@@ -606,70 +496,6 @@ new_world_war = {
 
 	global_immigrant_attract = -0.8
 	icon = 16
-}
-
-help_ai_spain = { #Uncivs
-	trigger = {
-		civilized = no
-		ai = yes
-		NOT = { literacy = 0.1 }
-		OR = {
-			is_culture_group = south_asian
-			is_culture_group = southeast_asian
-			is_culture_group = iranian_turanian
-			is_culture_group = arab
-		}
-	}
-	icon = 10
-	tax_efficiency = 0.05
-	education_efficiency_modifier = 0.2
-}
-
-help_ai_russia = {
-	trigger = {
-		OR = {
-			owns = 1008 #Russia
-			owns = 876 #Turkey
-			capital = 487 #Spain
-			capital = 521 #Portugal
-			capital = 2447 #Brazil
-			owns = 2379 #Argentina
-			owns = 2172 #Mexico
-			primary_culture = central_american
-			is_culture_group = south_slavic
-			primary_culture = greek
-			is_culture_group = pan_romanian
-			AND = { 
-				owns = 1649
-				owns = 1657
-				OR = {
-					centralization = regionalism
-					primary_culture = japanese
-				}
-			}
-		}
-		ai = yes
-	}
-	icon = 10
-	tax_efficiency = 0.08
-	administrative_efficiency_modifier = 0.03
-	supply_consumption = -0.05
-	education_efficiency_modifier = 0.2
-	mobilisation_size = 0.01
-	war_exhaustion = -0.5
-}
-
-help_ai_usa = {
-	trigger = {
-		owns = 2146
-		centralization = regionalism
-		ai = yes
-	}
-	icon = 10
-	tax_efficiency = 0.05
-	supply_consumption = -0.15
-	influence_modifier = -0.05
-	mobilisation_size = 0.01
 }
 
 yellow_river = {
@@ -851,7 +677,6 @@ free_state = {
 
 colonial_administration = {
 	trigger = {
-		ai = no
 		civilized = yes
 		OR = {
 			capital_scope = { continent = europe }
@@ -917,95 +742,4 @@ pashtunwali = {
 	org_regain = 0.2
 	war_exhaustion = -2.5
 	mobilisation_size = 0.2
-}
-
-line_of_advantage = {
-	trigger = {
-		primary_culture = japanese
-		is_mobilised = yes
-		ai = yes
-	}
-	icon = 10
-	mobilisation_economy_impact = -0.8
-}
-
-help_ai_secondary_power = {
-	trigger = {
-		exists = yes
-		is_secondary_power = yes
-		ai = yes
-	}
-	supply_consumption = -0.1
-	icon = 19
-}
-
-central_american_ai = {
-	trigger = {
-		exists = yes
-		ai = yes
-		is_greater_power = no
-		capital_scope = {
-			OR = { 
-				continent = north_america
-				continent = south_america
-			}
-		}
-		NOT = { 
-			total_pops = 200000
-			is_culture_group = american_cultures 
-			primary_culture = mexican
-			capital = 2339
-		}
-	}
-	supply_consumption = -0.2
-	mobilisation_size = 0.2
-	education_efficiency_modifier = 0.05
-	icon = 19
-}
-
-south_american_ai = {
-	trigger = {
-		exists = yes
-		ai = yes
-		is_greater_power = no
-		capital_scope = {
-			OR = { 
-				continent = north_america
-				continent = south_america
-			}
-		}
-		total_pops = 200000
-		NOT = {
-			capital = 2339
-			total_pops = 1500000
-			is_culture_group = american_cultures 
-			primary_culture = mexican
-		}
-	}
-	supply_consumption = -0.2
-	mobilisation_size = 0.05
-	icon = 19
-}
-
-south_american_ai_ii = {
-	trigger = {
-		exists = yes
-		ai = yes
-		is_greater_power = no
-		capital_scope = {
-			OR = { 
-				continent = north_america
-				continent = south_america
-			}
-		}
-		total_pops = 1500000
-		NOT = {
-			capital = 2339
-			is_culture_group = american_cultures 
-			primary_culture = mexican
-		}
-	}
-	supply_consumption = -0.2
-	mobilisation_size = 0.03
-	icon = 19
 }
