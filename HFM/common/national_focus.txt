@@ -264,10 +264,6 @@ promotion_focus = {
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { has_province_modifier = irish_oppression }
 			NOT = { state_scope = { officers = 0.002 } }
-			OR = {
-				NOT = { state_scope = { is_colonial = yes } }
-				owner = { has_country_flag = colonial_armies }
-			}
 		}
 	}
 
@@ -278,10 +274,6 @@ promotion_focus = {
 		limit = {
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { state_scope = { soldiers = 0.05 } }
-			OR = {
-				NOT = { state_scope = { is_colonial = yes } }
-				owner = { has_country_flag = colonial_armies }
-			}
 			OR = {
 				NOT = { state_scope = { soldiers = 0.048 } }
 				owner = { ai = no }
