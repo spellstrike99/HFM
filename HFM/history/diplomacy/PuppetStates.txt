@@ -702,14 +702,6 @@ vassal = {
 	end_date = 1912.1.1
 }
 
-#China/Korea
-vassal = {
-	first = QNG
-	second = KOR
-	start_date = 1636.1.1
-	end_date = 1876.1.1
-}
-
 #China/Lanfang
 vassal = {
 	first = QNG

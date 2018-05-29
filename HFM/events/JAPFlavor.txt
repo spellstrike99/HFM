@@ -788,6 +788,7 @@ country_event = {
 	trigger = {
 		tag = TKG
 		year = 1860
+		JAP = { exists = yes }
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism

@@ -2800,6 +2800,27 @@ political_decisions = {
 			LAN = {
 				government = presidential_dictatorship
 			}
+
+			any_country = {
+				limit = {
+					OR = {
+						tag = DAI
+						tag = KOR
+						tag = NEP
+						tag = RYU
+					}
+				}
+				set_country_flag = is_chinese_tributary_nation
+			}
+			any_country = {
+				limit = {
+					OR = {
+						substate_of = QNG
+						vassal_of = QNG
+					}
+				}
+				set_country_flag = is_chinese_substate
+			}
 		}
 	}
 	

@@ -180,6 +180,7 @@ political_decisions = {
 		picture = ansei_purge
 		potential = {
 			tag = TKG
+			JAP = { exists = yes }
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -239,6 +240,7 @@ political_decisions = {
 		picture = the_meiji_restoration
 		potential = {
 			primary_culture = japanese
+			JAP = { exists = yes }
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism

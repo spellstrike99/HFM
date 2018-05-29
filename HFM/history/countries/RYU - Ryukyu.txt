@@ -54,7 +54,8 @@ upper_house = {
 
 
 foreign_weapons = yes_foreign_weapons
-education_reform = yes_education_reform
+admin_reform = yes_admin_reform
+
 # Technologies
 flintlock_rifles = 1
 

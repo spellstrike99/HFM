@@ -228,6 +228,13 @@ alliance = {
 		end_date = 1936.1.1
 	}
 
+alliance = {
+		first = QNG
+		second = KOR
+		start_date = 1835.1.1
+		end_date = 1876.1.1
+	}
+
 #Siam/Champassak
 alliance = {
 	first = SIA

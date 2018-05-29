@@ -380,17 +380,17 @@ XIN_conservative_2;Amban Faction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 XIN_liberal_2;Reformer Faction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 KOR;Korea;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 KOR_absolute_monarchy;The Kingdom of Joseon;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-KOR_proletarian_dictatorship;DPRK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-KOR_reactionary;Bandong;;;;;;;;;;;;;;;;;;x;;;;
-KOR_liberal;Taewon'gun;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_liberal_2;Songgyungwan;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_conservative;Tong Hak;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_liberal_3;Silhak;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_anarcho_liberal;Geubjinpa;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_proletarian_dictatorship;People's Republic of Korea;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+KOR_reactionary;Chuksapa;;;;;;;;;;;;;;;;;;x;;;;
+KOR_liberal;Daewon'gun;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_liberal_2;Gaehwadang;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_conservative;Doklipdang;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_liberal_3;Silhakpa;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_anarcho_liberal;Gonghwadang;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 KOR_conservative_2;Wangdangpa;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_socialist;Sahoe-tang;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_communist;Choson Kongsantang;;;;;;;;;;;;;;;;;;;;;x;;;;
-KOR_fascist;Pasiseuteu Pati;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_socialist;Sahoe'dang;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_communist;Gongsandang;;;;;;;;;;;;;;;;;;;;;x;;;;
+KOR_fascist;Aegukdang;;;;;;;;;;;;;;;;;;;;x;;;;
 MCK;Manchuria;;;;;;;;;;;;;x
 MCK_fascist_dictatorship;Manzhouguo;Manchukuo;Manchukuo;;;;;;;;;;;x
 MCK_presidential_dictatorship;Fengtian Clique;;;;;;;;;;;;;x

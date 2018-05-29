@@ -27,11 +27,6 @@ country_event = {
 		KOR = {
 			exists = yes
 			civilized = no
-			vassal_of = QNG
-		}
-		NOT = {
-			truce_with = KOR
-			truce_with = QNG
 		}
 	}
 	
@@ -45,19 +40,12 @@ country_event = {
 	
 	option = {
 		name = "EVT85000OPTA"
-		QNG = { country_event = 85001 }
+		KOR = { country_event = 85001 }
 		ai_chance = { factor = 99 }
 	}
 	
 	option = {
 		name = "EVT85000OPTB"
-		prestige = -20
-		any_pop = {
-			scaled_militancy = {
-				issue = jingoism
-				factor = 2
-			}
-		}
 		ai_chance = { factor = 1 }
 	}
 }
@@ -65,64 +53,6 @@ country_event = {
 country_event = {
 	id = 85001
 	title = "EVTNAME85001" #French Demand Retribution
-	desc = "EVTDESC85001"
-	picture = "asian_administration"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT85001OPTA"
-		prestige = -10
-		KOR = { country_event = 85002 }
-		FROM = { country_event = 85003 }
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 2
-				FROM = { brigades_compare = 0.5 }
-			}
-		}
-	}
-	
-	option = {
-		name = "EVT85001OPTB"
-		prestige = 10
-		create_alliance = KOR
-		KOR = { country_event = 85004 }
-		FROM = { country_event = 85005 }
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				war = yes
-			}
-			modifier = {
-				factor = 0.1
-				num_of_revolts = 1
-			}		
-			modifier = {
-				factor = 0.5
-				war_exhaustion = 10
-			}
-			modifier = {
-				factor = 2
-				part_of_sphere = yes
-				NOT = { in_sphere = FROM }
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					in_sphere = FROM
-					alliance_with = FROM
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 85002
-	title = "EVTNAME85002" #Qing Abandons Korea - to Korea
 	desc = "EVTDESC85002"
 	picture = "asian_administration"
 	
@@ -130,135 +60,10 @@ country_event = {
 	
 	option = {
 		name = "EVT85002OPTA"
-		FROM = { release_vassal = THIS }
-		leave_alliance = FROM
-		relation = { who = FROM value = -100 }
-		ai_chance = {
-			factor = 10
-		}
-	}
-	
-	option = {
-		name = "EVT85002OPTB"
-		prestige = -10
-		FROM = { release_vassal = THIS }
-		leave_alliance = FROM
-		relation = { who = FROM value = 50 }
-		ai_chance = {
-			factor = 90
-		}
-	}
-}
-
-country_event = {
-	id = 85003
-	title = "EVTNAME85003" #Qing Abandons Korea - to France
-	desc = "EVTDESC85003"
-	picture = "administration"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT85003OPTA"
-		relation = { who = FROM value = 50 }
-		casus_belli = {
-			target = KOR
-			type = humiliate
-			months = 12
-		}
-		random_country = {
-			limit = { tag = RUS ai = yes }
-			diplomatic_influence = { who = KOR value = -400 }
-		}
-		war = {
-			target = KOR
-			attacker_goal = { casus_belli = humiliate }
-			defender_goal = { casus_belli = humiliate }
-		}
-	}
-}
-
-country_event = {
-	id = 85004
-	title = "EVTNAME85004" #Qing Will Defend Korea - to Korea
-	desc = "EVTDESC85004"
-	picture = "asian_administration"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT85004OPTA"
-		relation = { who = FROM value = 50 }
-		random_owned = {
-				limit = { exists = FRA }
-				owner = { relation = { who = FRA value = -100 } }
-			}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { relation = { who = BOR value = -100 } }
-		}
-		random_country = {
-			limit = {
-				tag = RUS
-				ai = yes
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = -400
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 85005
-	title = "EVTNAME85005" #Qing Will Defend Korea - to France
-	desc = "EVTDESC85005"
-	picture = "administration"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT85005OPTA"
-		leave_alliance = FROM
-		relation = { who = FROM value = -100 }
-		diplomatic_influence = { who = FROM value = -100 }
-		relation = { who = KOR value = -100 }
-		casus_belli = {
-			target = KOR
-			type = humiliate
-			months = 12
-		}
-		casus_belli = {
-			target = FROM
-			type = release_puppet
-			months = 12
-		}
-		casus_belli = {
-			target = FROM
-			type = cut_down_to_size
-			months = 12
-		}
-		war = {
-			target = KOR
-			attacker_goal = {
-				casus_belli = humiliate
-			}
-			call_ally = yes
-		}
-		ai_chance = {
-			factor = 90
-		}
-	}
-	
-	option = {
-		name = "EVT85005OPTB"
-		prestige = -40
-		leave_alliance = FROM
 		relation = { who = FROM value = -50 }
-		relation = { who = KOR value = -100 }
-		ai_chance = {
-			factor = 10
+		upper_house = {
+			ideology = reactionary
+			value = 0.2
 		}
 	}
 }
@@ -296,7 +101,7 @@ country_event = {
 			civilized = no
 			OR = {
 				has_country_modifier = uncivilized_isolationism
-				vassal_of = QNG
+				has_country_modifier = chinese_tributary_nation
 			}
 		}
 		NOT = {
@@ -338,22 +143,17 @@ country_event = {
 	option = {
 		name = "EVT85010OPTA"
 		KOR = { country_event = 85011 }
+		ai_chance = {
+			factor = 95
+		}
 	}
 	
 	option = {
 		name = "EVT85010OPTB"
 		prestige = -20
-		leave_alliance = KOR
 		relation = { who = KOR value = -100 }
-		random_country = {
-			limit = { is_our_vassal = KOR }
-			leave_alliance = THIS
-			relation = { who = THIS value = -50 }
-			add_casus_belli = {
-				target = THIS
-				type = release_puppet
-				months = 60
-			}
+		ai_chance = {
+			factor = 5
 		}
 	}
 }
@@ -378,11 +178,6 @@ country_event = {
 		remove_country_modifier = isolationist_foreign_naval_schools
 		remove_country_modifier = isolationist_foreign_officers
 		remove_country_modifier = isolationist_foreign_training
-		random_country = {
-			limit = { is_our_vassal = THIS }
-			release_vassal = THIS
-			country_event = 85012
-		}
 		FROM = { country_event = 85013 }
 		ai_chance = {
 			factor = 90
@@ -406,42 +201,6 @@ country_event = {
 				factor = 0
 				in_sphere = FROM
 			}
-		}
-	}
-}
-
-country_event = {
-	id = 85012
-	title = "EVTNAME85010" #The Ganghwa Incident - to Vassal Owner
-	desc = "EVTDESC85012"
-	picture = "ship_attacked"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT85012OPTA"
-		random_country = {
-			limit = {
-				OR = {
-					tag = JAP
-					tag = TKG
-				}
-				exists = yes
-			}
-			relation = { who = THIS value = -100 }
-			leave_alliance = THIS
-			add_casus_belli = {
-				target = THIS
-				type = humiliate
-				months = 12
-			}
-		}
-		relation = { who = FROM value = -50 }
-		leave_alliance = FROM
-		casus_belli = {
-			target = FROM
-			type = make_puppet
-			months = 12
 		}
 	}
 }
@@ -657,7 +416,6 @@ country_event = {
 	option = {
 		name = "EVT85020OPTA"
 		set_country_flag = tonghak_rebellion_happened
-		prestige = -10
 		any_owned = {
 			limit = {
 				region = KOR_1624
@@ -674,9 +432,6 @@ country_event = {
 			}
 			militancy = 5
 			consciousness = 5
-		}
-		any_greater_power = {
-			diplomatic_influence = { who = THIS value = -200 }
 		}
 	}
 }
@@ -739,6 +494,7 @@ country_event = {
 			}
 			has_country_flag = tonghak_rebellion_happened
 			NOT = { has_country_flag = tonghak_rebellion_ended }
+			has_country_modifier = chinese_tributary_nation
 		}
 		NOT = { has_global_flag = tonghak_chinese_intervention }
 	}
@@ -933,6 +689,9 @@ country_event = {
 			limit = { is_culture_group = east_asian }
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
+		}
+		any_greater_power = {
+			diplomatic_influence = { who = THIS value = -200 }
 		}
 	}
 }

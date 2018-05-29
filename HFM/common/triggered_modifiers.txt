@@ -282,17 +282,30 @@ substate_nation = {
 chinese_substate = {
 	trigger = {
 		OR = {
-			substate_of = QNG
-			vassal_of = QNG
+			is_substate = yes
+			is_vassal = yes
 		}
 		civilized = no
 		exists = yes
-		QNG = {	government = absolute_monarchy }
-		is_culture_group = east_asian
+		has_country_flag = is_chinese_substate
 	}
 	icon = 10
 	research_points_modifier = -0.2
 	global_pop_consciousness_modifier = 0.02
+}
+
+chinese_tributary_nation = {
+	trigger = {
+		civilized = no
+		exists = yes
+		has_country_flag = is_chinese_tributary_nation
+		NOT = { has_country_flag = stopped_tribution }
+	}
+	icon = 10
+	prestige = -0.03
+	badboy = -0.03
+	global_pop_consciousness_modifier = 0.03
+	global_pop_militancy_modifier = 0.03
 }
 
 own_kiel_canal = {
