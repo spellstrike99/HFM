@@ -428,13 +428,13 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 1100
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 15550
+		size = 16550
 	}
 }
 #Talca (20000/5000 POPS)
@@ -506,13 +506,13 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 1100
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 14550
+		size = 15550
 	}
 
 	aristocrats = {
@@ -630,13 +630,13 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 1100
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 14650
+		size = 15650
 	}
 }
 #Chillan (36000/9000 POPS)

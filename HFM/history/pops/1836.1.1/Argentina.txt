@@ -35,13 +35,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 6000
+		size = 3000
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 105825
+		size = 108825
 	}
 
 	slaves = {
@@ -73,13 +73,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 4000
+		size = 400
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 25550
+		size = 29150
 	}
 }
 #Azul (12000/3000 POPS)
@@ -287,13 +287,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 3000
+		size = 300
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 45015
+		size = 47715
 	}
 
 	clergymen = {
@@ -427,22 +427,22 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 2000
+		size = 825
 	}
 
-	soldiers = {
+	farmers = {
 		culture = afro_caribeno
 		religion = catholic
 		size = 500
 	}
 
-	soldiers = {
+	farmers = {
 		culture = afro_caribeno
 		religion = animist
 		size = 500
 	}
 
-	soldiers = {
+	farmers = {
 		culture = guarani
 		religion = animist
 		size = 500
@@ -451,7 +451,7 @@
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 36825
+		size = 38000
 	}
 }
 #Santa Fe Region (72000)
@@ -1220,13 +1220,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 5000
+		size = 500
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 76300
+		size = 80800
 	}
 
 	slaves = {

@@ -1,10 +1,10 @@
 ;;;;;;;;;;;;;x,,,
 AGRESSION_WAR_NAME_REPARATIONS_PEU_CHL;The $ORDER$War of the Pacific;;;;;;;;;;;;;;;;;;;;;;;;x
 AGRESSION_WAR_NAME_REPARATIONS_BOL_CHL;The $ORDER$War of the Pacific;;;;;;;;;;;;;;;;;;;;;;;;x
-AGRESSION_WAR_NAME_REPARATIONS_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
-NORMAL_WAR_NAME_REPARATIONS_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
-AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
-NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_CHL_PBC;The $ORDER$War of the Confederation;;;;;;;;;;;;;;;;;;;;;;;;x
 NORMAL_WAR_NAME_REPARATIONS;The $ORDER$$FIRST$-$SECOND$ War;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 AGRESSION_WAR_NAME_REPARATIONS;$ORDER$War of $FIRST$ Aggression;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 colonial_conquest;Colonial Conquest;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

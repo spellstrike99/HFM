@@ -56,24 +56,9 @@ country_event = {
 
 	trigger = {
 		exists = yes
-		OR = {
-			AND = {
-				tag = CHL
-				PBC = { owns = 2305 }
-			}
-			AND = {
-				OR = {
-					tag = ARG
-					tag = ARC
-					tag = LPL
-				}
-				PBC = { owns = 2370 }
-				OR = {
-					CHL = { has_country_flag = fight_the_PBC }
-					CHL = { has_country_flag = peace_with_the_PBC }
-					CHL = { war_with = PBC }
-				}
-			}
+		AND = {
+			tag = CHL
+			PBC = { owns = 2305 }
 		}
 		war = no
 		neighbour = PBC
@@ -86,11 +71,17 @@ country_event = {
 		}
 	}
 
+	fire_only_once = yes
+
 	mean_time_to_happen = {
-		months = 12
+		months = 9
 		modifier = {
 			factor = 0.5
 			PBC = { war = yes }
+		}
+		modifier = {
+			factor = 0.1
+			year = 1837
 		}
 	}
 
@@ -98,59 +89,20 @@ country_event = {
 		name = "EVT97050OPTA"
 		set_country_flag = fight_the_PBC
 		leave_alliance = PBC
-		1714 = { add_core = ARC }
-		2370 = { add_core = ARC }
-		2315 = { add_core = ARC }
 		any_pop = {
 			dominant_issue = {
 				factor = 0.05
 				value = jingoism
 			}
 		}
-		random_owned = {
-			limit = { owner = { tag = CHL } }
-			owner = {
-				casus_belli = {
-					target = PEU
-					type = war_reparations
-					months = 24
-				}
-				casus_belli = {
-					target = PBC
-					type = cut_down_to_size
-					months = 24
-				}
-				war = {
-					target = PBC
-					attacker_goal = { casus_belli = cut_down_to_size }
-					defender_goal = { casus_belli = war_reparations }
-					#call_ally = yes
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = ARG 
-						tag = ARC
-						tag = LPL
-					}
-				}
-			}
-			owner = {
-				war = {
-					target = PBC
-					attacker_goal = {
-						casus_belli = acquire_core_state
-						state_province_id = 2370
-					}
-				call_ally = yes
-				}
-			}
+		war = {
+			target = PBC
+			attacker_goal = { casus_belli = humiliate }
+			defender_goal = { casus_belli = humiliate }
+			#call_ally = yes
 		}
 		ai_chance = {
-			factor = 90
+			factor = 95
 		}
 	}
 
@@ -158,17 +110,6 @@ country_event = {
 		name = "EVT97050OPTB"
 		set_country_flag = peace_with_the_PBC
 		prestige = -3
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = ARG 
-						tag = ARC
-						tag = LPL
-					}
-				}
-			}
-		}
 		relation = {
 			who = PBC
 			value = 100
@@ -184,11 +125,99 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0.25
-				tag = CHL
+			factor = 5
+		}
+	}
+}
+
+#The Peru-Bolivian Confederation (Argentine)
+country_event = {
+	id = 97052
+	title = "EVTNAME97050"
+	desc = "EVTDESC97050"
+	picture = "deliberation"
+
+	trigger = {
+		exists = yes
+		AND = {
+			OR = {
+				tag = ARG
+				tag = ARC
+				tag = LPL
 			}
+			PBC = { owns = 2370 }
+			OR = {
+				CHL = { has_country_flag = fight_the_PBC }
+				CHL = { has_country_flag = peace_with_the_PBC }
+				CHL = { war_with = PBC }
+			}
+		}
+		war = no
+		neighbour = PBC
+		NOT = {
+			num_of_revolts = 1
+			truce_with = PBC
+			has_country_flag = fight_the_PBC
+			has_country_flag = peace_with_the_PBC
+			PBC = { has_country_flag = the_confederation_is_legitime }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 4
+		modifier = {
+			factor = 0.5
+			PBC = { war = yes }
+		}
+	}
+
+	option = {
+		name = "EVT97050OPTA"
+		set_country_flag = fight_the_PBC
+		leave_alliance = PBC
+		1714 = { add_core = ARC }
+		2370 = { add_core = ARC }
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+		war = {
+			target = PBC
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 2370
+			}
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVT97050OPTB"
+		set_country_flag = peace_with_the_PBC
+		prestige = -3
+		relation = {
+			who = PBC
+			value = 100
+		}
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+			scaled_militancy = {
+				issue = jingoism
+				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 5
 		}
 	}
 }
@@ -808,7 +837,7 @@ country_event = {
 	}
 }
 
-#García Ortiz-Mangabeira Treaty
+#Garcï¿½a Ortiz-Mangabeira Treaty
 country_event = {
 	id = 46610100
 	title = "EVTNAME46610100"

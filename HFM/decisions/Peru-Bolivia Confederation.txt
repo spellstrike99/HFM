@@ -312,11 +312,6 @@ political_decisions = {
 			}
 			any_country = {
 				limit = {
-					OR = {
-					 tag = SPU
-					 tag = PEU
-					 tag = BOL
-					}
 					primary_culture = south_andean
 					OR = {
 						in_sphere = PBC

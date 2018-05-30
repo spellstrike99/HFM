@@ -9,15 +9,6 @@ BRZ = {
 	value = 200
 }
 
-army = {
-	name = "Ejército de Entre Ríos"
-	location = 2360
-	regiment = {
-		name= "1. División de Infantería"
-		type = infantry
-		home = 2360
-	}
-}
 leader = {
    name = "Justo José de Urquiza"
    type = land
