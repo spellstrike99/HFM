@@ -68,10 +68,7 @@ political_decisions = {
 		allow = {
 			war_with = TKG
 			TKG = {
-				OR = {
-					war_exhaustion = 50
-					any_owned_province = { controlled_by = THIS }
-				}
+				any_owned_province = { controlled_by = THIS }
 				OR = {
 					national_provinces_occupied = 0.10
 					blockade = 0.50

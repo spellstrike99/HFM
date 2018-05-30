@@ -3805,7 +3805,7 @@ acquire_substate = {
 					num_of_ports = 1
 				}
 				neighbour = THIS
-				AND = { war_with = THIS ai = no }
+				AND = { war_with = THIS }
 			}
 			OR = {
 				NOT = {
