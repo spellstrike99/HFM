@@ -488,6 +488,7 @@ country_event = {
 			truce_with = PNJ 
 			relation = { who = PNJ value = 150 }
 			alliance_with = PNJ
+			PNJ = { civilized = yes }
 		}
 		war = no
 		NOT = { has_global_flag = 1_anglo_sikh_war }

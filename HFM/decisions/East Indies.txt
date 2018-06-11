@@ -1093,6 +1093,7 @@ political_decisions = {
 					blockade = 0.75
 				}
 				war_exhaustion = 10
+				1380 = { controller = THIS }
 			}
 		}
 		

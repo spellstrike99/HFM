@@ -436,6 +436,7 @@ country_event = {
 				primary_culture = vietnamese
 				AND = {
 					tag = SIA
+					NOT = { civilization_progress = 0.75 }
 					any_owned_province = {
 						OR = {
 							is_core = DAI
