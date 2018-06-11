@@ -27,11 +27,23 @@ nv_equality = {
 }
 
 nv_autocracy = {
+	global_immigrant_attract = -0.5
+	assimilation_rate = -0.1
 	literacy_con_impact = -0.2
 	core_pop_militancy_modifier = -0.01
 	ruling_party_support = 0.3
 	political_reform_desire = -0.05
-	mobilisation_size = 0.045
+	war_exhaustion = -0.2
+	leadership_modifier = 0.3
+	supply_consumption = -0.1
+	poor_everyday_needs = -0.1
+	middle_everyday_needs = -0.1
+	rich_everyday_needs = -0.1
+	poor_luxury_needs = -0.1
+	middle_luxury_needs = -0.1
+	rich_luxury_needs = -0.1
+	army_tech_research_bonus = 0.05
+	mobilisation_size = 0.1
 	mobilisation_economy_impact = 1.0
 }
 
