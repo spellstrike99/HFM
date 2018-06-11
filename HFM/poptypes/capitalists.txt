@@ -65,6 +65,8 @@ luxury_needs = {
 	telephones = 20
 	tobacco = 20
 	wine = 20
+	#
+	rubber = 10
 }
 
 

@@ -407,11 +407,11 @@ steel_factory = {
 artillery_factory = {       
 	template = factory_template
 	input_goods = { 
-		steel = 18		#84.6
-		coal = 8.5		#19.55   total input+maint = 113.975
+		steel = 19		#89.3
+		coal = 9.5		#21.85   total input+maint = 120.975
 	}
 	output_goods = artillery 
-	value = 2.2			#132
+	value = 2.4			#144
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.15
@@ -1161,11 +1161,11 @@ artisan_steel = {
 
 artisan_artillery = {       
 	input_goods = { 
-		steel = 18		#84.6
-		coal = 8.5		#19.55   total input+maint = 113.975
+		steel = 19		#89.3
+		coal = 9.5		#21.85   total input+maint = 120.975
 	}
 	output_goods = artillery 
-	value = 2.2			#132
+	value = 2.4			#144
 
 	owner = {
 		poptype = artisans 
