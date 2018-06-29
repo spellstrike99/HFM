@@ -83,6 +83,17 @@ political_decisions = {
 				}
 			consciousness = 3
 			}
+			
+			any_country = {
+				limit = {
+					OR = {
+						exists = no
+						NOT = { has_country_modifier = kalmar_union }
+					}
+					primary_culture = finnish
+				}
+				all_core = { add_core = SCA }
+			}
 		}
 		
 		ai_will_do = { factor = 1 	}

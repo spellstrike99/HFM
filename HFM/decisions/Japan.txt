@@ -255,7 +255,13 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			has_country_flag = emperor_meiji
+			OR = {
+				has_country_flag = emperor_meiji
+				AND = {
+					civilized = yes
+					ai = no
+				}
+			}
 			NOT = { has_country_modifier = kobu_gattai }
 			OR = {
 				is_vassal = no
@@ -657,20 +663,11 @@ political_decisions = {
 			OR = {
 				AND = {
 					is_our_vassal = KOR
-					year = 1910
-				}
-				KOR = {
-					civilized = yes
-					in_sphere = THIS
-					NOT = {
-						any_owned_province = {
-							has_province_modifier = peasant_revolt
-						}
+					OR = {
+						year = 1910
+						ai = no
 					}
 				}
-				owns = 1632
-				owns = 1625
-				owns = 1619
 			}
 		}
 		
@@ -768,13 +765,12 @@ political_decisions = {
 		effect = {
 			set_country_flag = claimed_korea
 			badboy = 5
-			add_country_modifier = { name = foreign_claims duration = 3650 }
-			KOR = { all_core = { add_core = THIS } }
 			1624 = {
 				owner = {
 					relation = { who = THIS value = -100 }
 					leave_alliance = THIS
 				}
+				country_event = 85031
 			}
 		}
 		
@@ -787,6 +783,61 @@ political_decisions = {
 		}
 	}
 	
+	embrace_the_koreans = {
+		picture = annex_korea
+		potential = {
+			OR = {
+				AND = {
+					tag = JAP
+					NOT = { exists = TKG }
+				}
+				AND = {
+					tag = TKG
+					NOT = { exists = JAP }
+				}
+			}
+			any_owned_province = { culture = korean }
+			NOT = { accepted_culture = korean }
+			KOR = { exists = no }
+			NOT = { has_country_flag = embraced_koreans }
+		}
+		
+		allow = {
+			NOT = { citizens_rights = primary_culture_only }
+			NOT = { citizenship_policy = residency }
+		}
+		
+		effect = {
+			set_country_flag = embraced_koreans
+			add_accepted_culture = korean	
+			any_pop = {
+				limit = { has_pop_culture = korean }
+				militancy = -1
+				consciousness = -3
+			}
+			
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				consciousness = 1
+			}
+			
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 3
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+
 	order_to_expel_barbarians = {
 		potential = {
 			tag = JAP
@@ -1492,6 +1543,7 @@ political_decisions = {
 					country_event = 1316085
 				}
 			}
+			create_vassal = KOR
 		}
 		
 		ai_will_do = {

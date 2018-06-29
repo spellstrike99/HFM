@@ -138,6 +138,10 @@ country_event = {
 			factor = 0.1
 			year = 1880
 		}
+		modifier = {
+			factor = 0.1
+			is_greater_power = yes
+		}
 	}
 	
 	option = {
@@ -360,6 +364,8 @@ country_event = {
 				civilization_progress = 0.7
 			}
 			year = 1894	
+			JAP = { is_sphere_leader_of = KOR }
+			TKG = { is_sphere_leader_of = KOR }
 		}
 		government = absolute_monarchy
 		OR = {
@@ -520,6 +526,7 @@ country_event = {
 			}
 			country_event = 85026
 		}
+		KOR = { leave_alliance = THIS }
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -589,8 +596,7 @@ country_event = {
 		name = "EVT85026OPTA"
 		prestige = 20
 		badboy = 5
-		create_vassal = KOR
-		create_alliance = KOR
+		KOR = { leave_alliance = THIS }
 		KOR = { country_event = 85027 }
 		FROM = {
 			relation = { who = THIS value = -100 }
@@ -830,6 +836,9 @@ country_event = {
 			}
 		}
 		
+		THIS = { military_access = KOR }
+		FROM = { military_access = KOR }
+		
 		ai_chance = {
 			factor = 100
 		}
@@ -1010,26 +1019,54 @@ country_event = {
 
 country_event = {
 	id = 85031
-	title = "EVTNAME85031" #Japan will lose cores on Korea after the timer runs out
+	title = "EVTNAME85031" #Foreign Claims
 	desc = "EVTDESC85031"
 	picture = "tonghak_rebellion"
 	
-	trigger = {
-		exists = yes
-		ai = yes
-		war = no
-		OR = {
-			JAP = { exists = yes has_country_flag = claimed_korea NOT = { has_country_modifier = foreign_claims } }
-			TKG = { exists = yes has_country_flag = claimed_korea NOT = { has_country_modifier = foreign_claims } }
-		}
-	}
-	
-	mean_time_to_happen = { months = 3 }
-	
-	fire_only_once = yes
-	
+	is_triggered_only = yes
+
 	option = {
 		name = "EVT85031OPTA"
-		KOR = { all_core = { remove_core = JAP remove_core = TKG } }
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = place_in_the_sun
+					state_province_id = 1624
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 1624
+				}
+				attacker_goal = {
+					casus_belli = place_in_the_sun
+					state_province_id = 1619
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 1619
+				}
+				attacker_goal = {
+					casus_belli = place_in_the_sun
+					state_province_id = 1627
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 1627
+				}
+				attacker_goal = {
+					casus_belli = place_in_the_sun
+					state_province_id = 1632
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 1632
+				}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+				}
+				call_ally = no
+			}
+		}
 	}
 }

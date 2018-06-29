@@ -1,4 +1,7 @@
-color = { 157  144  97 }
+color = { 41 22 111 }
+absolute_monarchy = { 239 172 115 }
+prussian_constitutionalism = { 239 172 115 }
+proletarian_dictatorship = { 237 28 39 }
 graphical_culture = AsianGC
 
 party = {
