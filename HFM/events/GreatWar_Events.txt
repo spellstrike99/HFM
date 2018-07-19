@@ -8392,15 +8392,17 @@ country_event = {
 	
 	option = {
 		name = "EVT96091OPTA"
-		396 = { 
+		random_owned = {
+			limit = {
+				province_id = 396
+			}
 			add_core = THIS
 			secede_province = THIS 
 			remove_core = PRU
 			remove_core = NGF
 			remove_core = GER
 			remove_core = GCF
-			}
-		
+		}
 	}
 }
 #Miquelon goes to the owner of newfoundland
